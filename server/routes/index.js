@@ -1,5 +1,1 @@
-const basicRoute = require("./basic");
-
-module.exports routeObject = {
-  basicRoute
-};
+module.exports = [].concat(require("./login"));
