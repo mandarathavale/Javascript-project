@@ -3,7 +3,7 @@ import { loginHandler } from "../handlers/loginHandler";
 module.exports = [
   {
     method: "POST",
-    path: "/",
+    path: "/login",
     config: { auth: false },
     handler: loginHandler
   }

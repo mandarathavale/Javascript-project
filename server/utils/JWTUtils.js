@@ -4,7 +4,6 @@ export const signJWT = function() {
   const token = jwt.sign({ name: "mandar" }, process.env.SECRET_KEY, {
     expiresIn: process.env.TOKEN_EXPIRY
   });
-  // console.log(token);
   return token;
 };
 
