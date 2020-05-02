@@ -1,2 +1,1 @@
-# College_Website
-project to create demo college website with react and node.
+Boilerplate javascript code for react and node.
