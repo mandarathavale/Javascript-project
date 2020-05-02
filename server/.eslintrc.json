@@ -15,5 +15,7 @@
         "sourceType": "module"
     },
     "rules": {
+      "import/no-dynamic-require" : "0",
+      "no-console": 0
     }
 }

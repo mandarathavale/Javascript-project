@@ -1,17 +1,21 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "test": "npx eslint --fix ./"
   },
-  "author": "",
+  "author": "Mandar Athavale",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
+    "express-validator": "^6.4.1",
+    "http-errors": "~1.6.3",
     "moment": "^2.23.0",
     "sequelize": "^5.21.7",
     "winston": "^3.1.0",
@@ -21,7 +25,15 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "husky": "^4.2.5",
     "nodemon": "^1.18.9",
     "sequelize-cli": "^5.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
   }
 }
